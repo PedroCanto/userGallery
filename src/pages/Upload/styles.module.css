@@ -1,0 +1,97 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+}
+.header strong {
+  font-size: 2.1rem;
+  color: var(--gray-700);
+  line-height: 2.74rem;
+  margin-top: 2.4rem;
+  font-weight: bold;
+  width: 30rem;
+  height: 2.75rem;
+}
+.upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload input {
+
+  cursor: pointer;
+  position: relative;
+  height: 18.75rem;
+  width: 35rem;
+  opacity: 0;
+}
+
+.quadrado {
+  display: flex;
+  border: dashed var(--blue);
+  height: 18.75rem;
+  width: 35rem;
+  margin-top: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+.quadrado img{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 3.75rem;
+  color: var(--blue);
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+}
+.footerButton1 {
+  background: var(--blue);
+  border-radius: 3px;
+  border: 0;
+  padding: 0.9rem 2.1rem;
+  margin-right: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  height: 3.9rem;
+  width: 12.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--withe);
+  font-size: 1rem;
+  line-height: 1.1rem;
+  gap: 0.625rem;
+}
+
+.footerButton2 {
+  background: var(--gray-700);
+  border-radius: 3px;
+  margin-left: 1rem;
+  border: 0;
+  padding: 0.9rem 2.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  height: 3.9rem;
+  width: 12.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--withe);
+  font-size: 1rem;
+  line-height: 1.1rem;
+  gap: 0.625rem;
+}
+.footerButton2:hover {
+  background: var(--red);
+}
