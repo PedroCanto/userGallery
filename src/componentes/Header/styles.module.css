@@ -1,0 +1,40 @@
+.header {
+  background: var(--withe);
+}
+
+.header header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header strong {
+  color: var(--gray-400);
+  line-height: 2.3rem;
+  font-size: 1.9rem;
+  margin-top: 1.8rem;
+  margin-left: 3.75rem;
+}
+
+.header header button[type="submit"] {
+  background: var(--gray-400);
+  border-radius: 3px;
+  border: 0;
+  margin-top: 1.25rem;
+  padding: 0.875rem 3rem;
+  cursor: pointer;
+  height: 3.5rem;
+  width: 17.5rem;
+  font-size: 1.4rem;
+  color: var(--gray-700);
+  line-height: 1.8rem;
+  margin-right: 4rem;
+  font-weight: bold;
+  margin-top: 1.25rem;
+  cursor: pointer;
+}
+
+.header header button[type="submit"]:hover {
+  background: var(--red);
+  color: var(--withe);
+}

@@ -69,7 +69,6 @@
   cursor: pointer;
   height: 3.9rem;
   width: 12.5rem;
-  font-family: "Montserrat", sans-serif;
   color: var(--withe);
   font-size: 1rem;
   line-height: 1.1rem;
@@ -86,7 +85,6 @@
   cursor: pointer;
   height: 3.9rem;
   width: 12.5rem;
-  font-family: "Montserrat", sans-serif;
   color: var(--withe);
   font-size: 1rem;
   line-height: 1.1rem;

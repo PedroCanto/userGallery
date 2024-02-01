@@ -17,7 +17,6 @@ export function View() {
   if (!images) {
     return <h1>Carregando</h1>;
   }
-
   return (
     <main>
       <header className={styles.header}>
@@ -31,4 +30,5 @@ export function View() {
       </footer>
     </main>
   );
+
 }

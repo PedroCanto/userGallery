@@ -5,14 +5,14 @@
 }
 
 .carrossel strong {
-  font-family: "Montserrat", sans-serif;
+
   font-size: 2.25rem;
   color: var(--gray-700);
   line-height: 2.74rem;
   margin-top: 2.4rem;
   font-weight: bold;
-  width: 10.93rem;
-  height: 2.75rem;
+  margin-right: 5rem;
+
 }
 .carrossel form {
   margin-left: 36rem;
@@ -20,30 +20,29 @@
   margin-top: 1rem;
 }
 
-.carrosselbuttonimg {
+.carrosselButtonImg {
   background: var(--white);
   border-radius: 3px;
   border-color: var(--gray-700);
   margin-top: 1.25rem;
   cursor: pointer;
-  height: 3rem;
-  width: 4.75rem;
-  font-size: 2.81rem;
+  height: 2.3rem;
+  width: 3rem;
+  font-size: 1.5rem;
   color: var(--blue);
-  gap: 0.625rem;
 }
 
-.carrosselbuttontable {
+.carrosselButtonTable {
   background: var(--gray-200);
   border-radius: 3px;
   border-color: var(--gray-700);
   margin-top: 1.25rem;
   cursor: pointer;
-  height: 3rem;
-  width: 4.75rem;
-  font-size: 2.81rem;
+  height: 2.3rem;
+  width: 3rem;
+  font-size: 1.5rem;
   color: var(--gray-700);
-  gap: 0.625rem;
+ 
 }
 
 .slide {
@@ -68,8 +67,9 @@
 }
 
 .slide img {
-  width: 55.5rem;
-  height: 32.55rem;
+  width: auto;
+  object-fit: cover;
+  height: 32.5rem;
   border: solid;
   border-color: var(--gray-700);
 }

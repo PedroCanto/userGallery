@@ -43,13 +43,13 @@ export function Table() {
           <form>
             <button
               onClick={() => navigate("/carousel")}
-              className={styles.tabelaButtonimg}
+              className={styles.tabelaButtonImg}
             >
               <Image />
             </button>
             <button
-              onClick={() => navigate("/table")}
-              className={styles.tabelaButtontable}
+              disabled
+              className={styles.tabelaButtonTable}
             >
               <ListBullets />
             </button>
@@ -60,7 +60,7 @@ export function Table() {
               Upload de Imagem
             </button>
           </form>
-      <table>
+      <table  className="tabela">
         <thead>
           <th>Id</th>
           <th>Nome</th>

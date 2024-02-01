@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { authContext } from "../context/AuthContext";
-import styles from "./Header.module.css"
+import { authContext } from "../../context/AuthContext";
+import styles from "./styles.module.css"
 
 export function Header(){
     const { handleLogout } = useContext(authContext);

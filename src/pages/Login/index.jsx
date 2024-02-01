@@ -6,9 +6,11 @@ import { authContext } from "../../context/AuthContext";
 
 
 
+
 export function Login() {
-  const navigate = useNavigate();
   
+  const navigate = useNavigate();
+
   const { handleLoginUser } = useContext(authContext);
 
   const { register, handleSubmit } = useForm();
@@ -20,6 +22,7 @@ export function Login() {
       throw new Error("Error authenticating");
     }
   };
+
 
   return (
     <main className={styles.login}>
@@ -38,9 +41,12 @@ export function Login() {
           type="password"
         />
         <footer>
-          <button  type="submit">
+          <button   type="submit">
             Acessar a plataforma
           </button>
+
+          
+
      
         </footer>
       </form>

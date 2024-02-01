@@ -3,7 +3,7 @@ import { Image, ListBullets, CaretLeft, CaretRight } from "phosphor-react";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../../services/api";
-import { Header } from "../../componentes/Header";
+import { Header } from "../../componentes/Header/index"
 
 export function Carousel() {
   const navigate = useNavigate();
@@ -13,11 +13,10 @@ export function Carousel() {
   useEffect(() => {
     getAllImages();
   }, []);
-
+ 
   useEffect(() => {
-    console.log(images);
   }, [images]);
-
+ 
   async function getAllImages() {
     const { data } = await api.get("/image");
     setImages(data);
@@ -30,14 +29,14 @@ export function Carousel() {
         <strong>Carrossel</strong>
         <form>
           <button
-            onClick={() => navigate("/carousel")}
-            className={styles.carrosselbuttonimg}
+            disabled
+            className={styles.carrosselButtonImg}
           >
             <Image />
           </button>
           <button
             onClick={() => navigate("/table")}
-            className={styles.carrosselbuttontable}
+            className={styles.carrosselButtonTable}
           >
             <ListBullets />
           </button>
@@ -51,6 +50,7 @@ export function Carousel() {
         >
           <CaretLeft />
         </button>
+        
         <img
           src={`data:image/jpeg;base64, ${images[selectedImageIndex]?.B64file}`}
         />
